@@ -6,3 +6,4 @@ reportlab
 xlsxwriter
 openpyxl
 pytest
+plotly
